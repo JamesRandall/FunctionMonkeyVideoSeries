@@ -7,6 +7,7 @@ using System.Web.Http;
 using AzureFromTheTrenches.Commanding;
 using AzureFromTheTrenches.Commanding.Abstractions;
 using FunctionMonkey.Abstractions.Http;
+using FunctionMonkey.Commanding.Abstractions.Validation;
 using Microsoft.AspNetCore.Mvc;
 using ServerlessBlog.Application.Exceptions;
 
@@ -41,6 +42,11 @@ namespace ServerlessBlog
         }
 
         public Task<IActionResult> CreateResponse<TCommand>(TCommand command)
+        {
+            return null;
+        }
+
+        public Task<IActionResult> CreateValidationFailureResponse<TCommand>(TCommand command, ValidationResult validationResult) where TCommand : ICommand
         {
             return null;
         }

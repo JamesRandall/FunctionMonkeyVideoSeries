@@ -5,10 +5,10 @@
   </PropertyGroup>
   <ItemGroup>
     <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
-    <PackageReference Include="FunctionMonkey" Version="0.22.0-beta000" />
-    <PackageReference Include="FunctionMonkey.Compiler" Version="0.22.0-beta000" />
-    <PackageReference Include="FunctionMonkey.FluentValidation" Version="0.22.0-beta000" />
-    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.24" />
+    <PackageReference Include="FunctionMonkey" Version="1.0.0" />
+    <PackageReference Include="FunctionMonkey.Compiler" Version="1.0.0" />
+    <PackageReference Include="FunctionMonkey.FluentValidation" Version="1.0.0" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.26" />
   </ItemGroup>
   <ItemGroup>
     <ProjectReference Include="..\ServerlessBlog.Application\ServerlessBlog.Application.csproj" />
