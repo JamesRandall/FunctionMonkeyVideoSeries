@@ -1,0 +1,26 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+  <PropertyGroup>
+    <TargetFramework>netcoreapp2.1</TargetFramework>
+    <AzureFunctionsVersion>v2</AzureFunctionsVersion>
+  </PropertyGroup>
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="6.0.0" />
+    <PackageReference Include="FunctionMonkey" Version="3.0.11-beta5" />
+    <PackageReference Include="FunctionMonkey.Compiler" Version="3.0.11-beta5" />
+    <PackageReference Include="FunctionMonkey.FluentValidation" Version="3.0.11-beta5" />
+    <PackageReference Include="Microsoft.NET.Sdk.Functions" Version="1.0.26" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ServerlessBlog.Application\ServerlessBlog.Application.csproj" />
+    <ProjectReference Include="..\ServerlessBlog.Commands\ServerlessBlog.Commands.csproj" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Update="host.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+    </None>
+    <None Update="local.settings.json">
+      <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
+      <CopyToPublishDirectory>Never</CopyToPublishDirectory>
+    </None>
+  </ItemGroup>
+</Project>
