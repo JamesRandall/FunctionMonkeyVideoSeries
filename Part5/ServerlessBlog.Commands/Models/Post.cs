@@ -8,6 +8,6 @@ namespace ServerlessBlog.Commands.Models
 
         public DateTime PostedAtUtc { get; set; }
 
-        public Guid CreatedByUserId { get; set; }
+        public string CreatedByUserId { get; set; }
     }
 }

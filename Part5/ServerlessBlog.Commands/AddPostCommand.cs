@@ -6,7 +6,8 @@ namespace ServerlessBlog.Commands
 {
     public class AddPostCommand : ICommand<Post>
     {
-        public Guid UserId { get; set; }
+        [SecurityProperty]
+        public string UserId { get; set; }
 
         public NewPost Post { get; set; }
     }

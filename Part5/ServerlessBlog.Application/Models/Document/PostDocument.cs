@@ -8,7 +8,7 @@ namespace ServerlessBlog.Application.Models.Document
 
         public DateTime PostedAtUtc { get; set; }
 
-        public Guid CreatedByUserId { get; set; }
+        public string CreatedByUserId { get; set; }
 
         public string Title { get; set; }
 
